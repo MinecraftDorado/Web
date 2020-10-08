@@ -1,16 +1,40 @@
 body {
-    background-image: repeating-linear-gradient(to bottom, rgba(89, 156, 255, 0.897), rgb(103, 203, 221));
+    background-image: repeating-linear-gradient(to bottom, #599cffe5, #67cbdd);
     background-attachment: fixed;
 }
 
 .gui {
-    background-color: rgba(95, 158, 160, 0.336);
+    background-color: #5f9ea056;
     margin: 10% auto;
+    margin-top: 0px;
     width: 60%;
 
     border-radius: 50px;
     border-color: #a389895b;
     border-style: solid;
+}
+
+.gui-top {
+    margin: 10% auto;
+    margin-bottom: 0px;
+    width: 50%;
+}
+
+.gui-top button {
+    background-color: transparent;
+
+    border: solid #a389895b;
+    border-radius: 7px 7px 0px 0px;
+    border-width: 3px;
+    border-bottom: 0px;
+
+    font-size: 18px;
+}
+
+.gui-top button:hover {
+    background-color: #c5c5c5a1;
+
+    color: white;
 }
 
 .icon{
@@ -24,6 +48,8 @@ body {
     border-color: teal;
     border-style: solid;
     border-width: 5px;
+
+    background-color: rgb(108, 189, 255);
 }
 
 .responsive {
@@ -34,4 +60,53 @@ body {
 
 .content{
     padding: 100px 5% 50px 5%;
+}
+
+h2, h3, h4, h5, h6 {
+    color: black;
+    background: none;
+    font-weight: normal;
+    margin: 0;
+    padding-top: .5em;
+    padding-bottom: .17em;
+    border-bottom: 2px solid rgb(28, 77, 100);
+    clear: both;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.spoiler {
+    background-color: #D9D9D9;
+    color: #535353;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 3px #999;
+    padding: 4px;
+    margin-bottom: 10px;
+}
+
+pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 10px;
+}
+
+code {
+    background-color: white;
+    color: black;
+}
+
+info {
+    color: red;
+    font-weight: bold;
+}
+
+body i {
+    color: darkcyan;
+}
+body a {
+    color: darkcyan;
 }

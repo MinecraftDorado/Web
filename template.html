@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chester - Wiki</title>
     <link href="css/page.css", rel="stylesheet">
+    <script type="text/javascript" src="js/button.js"></script>
+    <script type="text/javascript" src="js/spoiler.js"></script>
     <link rel="icon" href="images/logo.png">
 </head>
 <body>
+    <div class="gui-top">
+            <button onclick="toHome()">Home</button>
+            <button>Info</button>
+        </div>
+    </div>
     <div class="gui">
         <div><img class="icon responsive" src="images/apple.png"></img></div>
         <div class="content">
-            <h1>asdf</h1>
+            <h1>Title</h1>
+            <h2>asdf</h2>
             <p>asdfsdf asdf sdaf sdaf asdf sadf asdfasd fasdf asdf asdfasdf asdf asdf asdf asdf</p>
             <p>asdfsdf</p>
             <p>asdfsdf</p>
@@ -21,6 +29,57 @@
             <p>asdfsdf</p>
             <p>asdfsdf</p>
             <p>asdfsdf</p>
+
+            <p id="Current types of perks include following:">
+            <ul>
+                <li>ALL_RESISTANCE <i>(Damage reduced)</i></li>
+                <li>EXPLOSION_RESISTANCE <i>(Explosion damage is reduced)</i></li>
+                <li>FIRE_RESISTANCE <i>(Fire damage is reduced)</i></li>
+                <li>PROJECTILE_RESISTANCE <i>(Projectile damage is reduced)</i></li>
+                <li>SPEED <i>(Speed boost)</i></li>
+                <li>ITEM_FINDER <i>(Increase search radius)</i></li>
+                <li>ITEM_KEEPER <i>(Reduces loss of objects)</i></li>
+                <li>MAX_HEALTH <i>(Add max health)</i></li>
+                <li>REG_BOOST <i>(Add regeneration boost)</i></li>
+            </ul>
+            </p>
+            <br/>
+            <p><info>(i) </info><i>To customize a perk or create your own, enter the yml that you want to edit and change any of the following values:</i></p>
+
+            <p>» Here you can find all the information about the plugin and its settings. If you find any error, do not hesitate to mention it in my discord <a href="https://discordapp.com/channels/@Demon/4531/" target="_blank">Demon#4531</a></p>
+
+            <ul>
+                <li><code>/chester spawn (type)</code> - <i>Spawn a Chester</i></li>
+            </ul>
+
+            <button type="button" onclick="show('perks_spoiler')" class="spoiler">Show code</button>
+            <pre><code id="perks_spoiler" style="display: block;">
+type: ALL_RESISTANCE # ( SPEED, FIRE_RESISTANCE, ITEM_FINDER, ITEM_KEEPER, ALL_RESISTANCE, MAX_HEALTH, REG_BOOST, ... )
+item:
+    type: SHIELD
+    name: "&bExample"
+    lore:
+    - "&7Example value: &b%perk_example_value%%" # %perk_(yml name)_value%
+tiers:
+    1:
+        price: 10
+        value: 5
+    2:
+        price: 15
+        value: 15
+    3:
+        price: 25
+        value: 25
+    4:
+        price: 50
+        value: 35
+    5:
+        price: 75
+        value: 45
+    6:
+        price: 100
+        value: 60
+            </code></pre>
         </div>
     </div>
 </body>

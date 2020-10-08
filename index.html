@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chester - Wiki</title>
     <link href="css/index.css", rel="stylesheet">
+    <script type="text/javascript" src="js/button.js"></script>
     <link rel="icon" href="images/logo.png">
 </head>
 <body>
     <div class="gui">
         <div class="grid">
-            <div class="grid-content"><a href=""><img src="images/inv.png"></img></a></div>
-            <div class="grid-content"><a href=""><img src="images/chest.png"></img></a></div>
-            <div class="grid-content"><a href=""><img src="images/emerald.png"></img></a></div>
+            <div class="grid-content"><button onclick="openUrl('recipes')"><img src="images/inv.png"></img></button></div>
+            <div class="grid-content"><button onclick="openUrl('chester')"><img src="images/chest.png"></img></button></div>
+            <div class="grid-content"><button onclick="openUrl('obtain-parks')"><img src="images/emerald.png"></img></button></div>
             
-            <div class="grid-content"><a href=""><img src="images/shield.png"></img></a></div>
-            <div class="grid-content"><a href="template"><img src="images/apple.png"></img></a></div>
-            <div class="grid-content"><a href=""><img src="images/test.jpg"></img></a></div>
+            <div class="grid-content"><button onclick="openUrl('perks')"><img src="images/shield.png"></img></button></div>
+            <div class="grid-content"><button onclick="openUrl('food')"><img src="images/apple.png"></img></button></div>
+            <div class="grid-content"><button><img src="images/more.png"></img></button></div> <!-- Content ?? -->
         </div>
     </div>
 </body>
